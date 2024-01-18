@@ -1,9 +1,9 @@
 module "robotshop" {
-  source = "../../../terraform-aws-vpc"
-  vpc_cidr = var.vpc_cidr
+  source               = "../terraform-aws-vpc"
+  vpc_cidr             = var.vpc_cidr
   enable_dns_hostnames = var.enable_dns_hostnames
-  project_name = var.project_name
-  environment = var.environment
+  project_name         = var.project_name
+  environment          = var.environment
 
   public_subnets_cidr = var.public_subnets_cidr
 

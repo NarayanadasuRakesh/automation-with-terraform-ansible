@@ -1,19 +1,19 @@
 variable "vpc_cidr" {
-  type = string
+  type    = string
   default = "10.0.0.0/16"
 }
 
 variable "enable_dns_hostnames" {
-  type = bool
+  type    = bool
   default = true
 }
 
 variable "common_tags" {
   type = map
   default = {
-    Project = "robotshop"
+    Project     = "robotshop"
     Environment = "dev"
-    Terraform = true
+    Terraform   = true
   }
 }
 
@@ -22,7 +22,7 @@ variable "vpc_tags" {
 }
 
 variable "project_name" {
-  default = "roboshop"
+  default = "robotshop"
 }
 
 variable "environment" {
@@ -38,7 +38,7 @@ variable "igw_tags" {
 
 
 variable "public_subnets_cidr" {
-  default = ["10.0.1.0/24","10.0.2.0/24"]
+  default = ["10.0.1.0/24", "10.0.2.0/24"]
 }
 
 variable "public_subnets_tags" {
@@ -48,17 +48,17 @@ variable "public_subnets_tags" {
 }
 
 variable "private_subnets_cidr" {
-  default = ["10.0.11.0/24","10.0.12.0/24"]
+  default = ["10.0.11.0/24", "10.0.12.0/24"]
 }
 
 variable "private_subnets_tags" {
   default = {
-    type = "private"
+    Type = "private"
   }
 }
 
 variable "database_subnets_cidr" {
-  default = ["10.0.21.0/24","10.0.22.0/24"]
+  default = ["10.0.21.0/24", "10.0.22.0/24"]
 }
 
 variable "database_subnets_tags" {
