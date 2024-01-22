@@ -89,7 +89,7 @@ resource "aws_eip" "eip" {
 
 resource "aws_nat_gateway" "nat" {
   allocation_id = aws_eip.eip.id
-  subnet_id     = aws_subnet.public[0].id
+  subnet_id     = aws_subnet.public[0].id # attach to public la subnet
 
   tags = {
     Name = "${local.name}-nat"
