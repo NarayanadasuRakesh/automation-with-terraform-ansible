@@ -16,3 +16,8 @@ variable "common_tags" {
     Terraform = "true"
   }
 }
+
+variable "zone_id" {
+  type = string
+  default = "rakeshintech.online"
+}
