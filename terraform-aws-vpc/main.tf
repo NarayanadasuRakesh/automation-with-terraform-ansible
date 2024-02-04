@@ -49,8 +49,8 @@ resource "aws_subnet" "private" {
     var.private_subnets_tags,
     {
       Name = "${local.name}-private-${local.az_names[count.index]}"
-      #robotshop-private-us-east-1a
-      #robotshop-private-us-east-1b
+      #roboshop-private-us-east-1a
+      #roboshop-private-us-east-1b
     }
   )
 }

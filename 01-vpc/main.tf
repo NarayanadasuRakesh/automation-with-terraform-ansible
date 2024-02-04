@@ -1,4 +1,4 @@
-module "robotshop" {
+module "roboshop" {
   source               = "../terraform-aws-vpc"
   vpc_cidr             = var.vpc_cidr
   enable_dns_hostnames = var.enable_dns_hostnames

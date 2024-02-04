@@ -11,7 +11,7 @@ variable "enable_dns_hostnames" {
 variable "common_tags" {
   type = map
   default = {
-    Project     = "robotshop"
+    Project     = "roboshop"
     Environment = "dev"
     Terraform   = true
   }
@@ -22,7 +22,7 @@ variable "vpc_tags" {
 }
 
 variable "project_name" {
-  default = "robotshop"
+  default = "roboshop"
 }
 
 variable "environment" {
